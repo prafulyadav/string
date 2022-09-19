@@ -1,0 +1,23 @@
+public class pro {
+    public static void main(String[] args) {
+        String s1="praful";
+        String s2="praful";
+        System.out.println(compareto(s1,s2));
+    }
+
+    public static int compareto(String str1,String str2){
+        int i=0;
+        int j=0;
+        while (i<str1.length() && j<str2.length()){
+            if (str1.charAt(i)>str2.charAt(j)){
+                return str1.charAt(i)-str2.charAt(j);
+            }
+            else if (str2.charAt(j)>str1.charAt(i)){
+                return str2.charAt(j)-str1.charAt(i);
+            }
+            i++;
+            j++;
+        }
+        return str1.length()-str2.length();
+    }
+}
