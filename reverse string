@@ -1,0 +1,17 @@
+public class reverse_string {
+    public static void main(String[] args) {
+        System.out.println(reverse("yadav praful am i praful"));
+    }
+    public  static String  reverse(String str){
+        str=str.trim();
+        String ans="";
+        String ar[]=str.split("\s+");
+        for (int i=ar.length-1;i>=0;i--){
+//            int l=ar[i].length();
+//            System.out.println(l);
+            ans=ans+ar[i]+" ";
+
+        }
+        return ans.trim();
+    }
+}
