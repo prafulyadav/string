@@ -1,0 +1,22 @@
+public class good_string {
+    public static void main(String[] args) {
+        System.out.println(goodstr("aeiou"));
+    }
+    public static  int goodstr(String str){
+        int count=0;
+        int res=0;
+        for (int i=0;i<str.length();i++){
+            char ch=str.charAt(i);
+            if (ch=='a'|| ch=='e'||ch=='i'||ch=='o'||ch=='u'){
+                count++;
+            }
+            else
+            {
+                res=Math.max(res,count);
+                count=0;
+            }
+        }
+        res=Math.max(res,count);
+        return res;
+    }
+}
