@@ -1,0 +1,17 @@
+public class lenwise_substring {
+    public static void main(String[] args) {
+        String s="abc";
+        substring(s);
+    }
+    public static void substring(String str){
+        int c=0;
+        for (int k=1;k<=str.length();k++){
+            for (int j=k;j<=str.length();j++){
+                int i=j-k;
+               System.out.println(str.substring(i,j));
+                c++;
+            }
+        }
+        System.out.println("count : "+c);
+    }
+}
