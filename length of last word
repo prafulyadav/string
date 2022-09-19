@@ -1,0 +1,17 @@
+public class length_of_lastword {
+    public static void main(String[] args) {
+        System.out.println(len("am i praful"));
+    }
+    public static int len(String str){
+        str=str.trim();
+
+        String ar[]=str.split("\s+");
+        String last_word="";
+       for (int i=0;i<=ar.length-1;i++){
+           if (i== ar.length-1){
+               last_word=ar[i];
+           }
+       }
+       return last_word.length();
+    }
+}
